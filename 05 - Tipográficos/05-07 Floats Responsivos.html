@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    
+    <title>Hello, world!</title>
+    <style>
+        @media(max-width: 574px){ 
+            body{ background-color: rgb(252, 207, 173); } 
+            .xs{ display: block; }
+            .sm{ display: none; }
+            .md{ display: none; }
+            .lg{ display: none; }
+            .xl{ display: none; }
+        }
+        @media(min-width: 575px){ 
+            body{ background-color: rgb(243, 211, 171); }
+            .xs{ display: none; }
+            .sm{ display: block; }
+            .md{ display: none; }
+            .lg{ display: none; }
+            .xl{ display: none; }
+        }
+        @media(min-width: 768px){ 
+            body{ background-color: rgb(226, 252, 133); } 
+            .xs{ display: none; }
+            .sm{ display: none; }
+            .md{ display: block; }
+            .lg{ display: none; }
+            .xl{ display: none; }
+        }
+        @media(min-width: 992px){ 
+            body{ background-color: rgb(112, 250, 112); } 
+            .xs{ display: none; }
+            .sm{ display: none; }
+            .md{ display: none; }
+            .lg{ display: block; }
+            .xl{ display: none; }
+        }
+        @media(min-width: 1200px){ 
+            body{ background-color: rgb(252, 252, 128); } 
+            .xs{ display: none; }
+            .sm{ display: none; }
+            .md{ display: none; }
+            .lg{ display: none; }
+            .xl{ display: block; }
+        }
+        h3{
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            font-size: 1.5rem;
+            display: none;
+        }
+        .principal p{
+            width: 35%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container principal">        
+        <h2 class="text-center my-2">Floats Responsivos - Clearfix</h2>                
+        <hr>
+        <h3 class="xs mb-4 text-center">Dispositivo XS - Extra-Small &lt; 576px</h3>
+        <h3 class="sm mb-4 text-center">Dispositivo SM - Small &gt; 576px</h3>
+        <h3 class="md mb-4 text-center">Dispositivo MD - Medium &gt; 768px</h3>
+        <h3 class="lg mb-4 text-center">Dispositivo LG - Large &gt; 992px</h3>
+        <h3 class="xl mb-4 text-center">Dispositivo XL - Extra-Large &gt; 1200px</h3>
+        
+        <p class="float-right clearfix">"Sinta medo, fuja, o destino chega de qualquer das formas. E agora, ele chegou. Ou devo dizer, eu cheguei." </p>
+
+        <p class="float-left clearfix">"E eles me chamaram de louco. E tudo o que eu previ se passou."</p>
+
+        <p class="float-sm-right clearfix">"Eu lhe asseguro, irmão, o sol vai brilhar em nós novamente."</p>
+
+        <p class="float-lg-right clearfix">"Você não pode ser o Homem-Aranha amigo da vizinhança se não existir vizinhança."</p>                
+    </div>    
+
+    <div class="container">        
+        <div class="clearfix">
+            <button class="btn btn-success float-left">flutua a esquerda</button>
+            <button class="btn btn-success float-right">flutua a direita</button>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse possimus hic sint quisquam quos laborum, accusamus nulla eligendi quibusdam, earum fugit adipisci temporibus dolorum nisi nostrum quia at blanditiis corporis.</p>
+    </div>
+</body>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+</body>
+</html>

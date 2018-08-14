@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">   
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">    
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <title>Hello, world!</title>        
+</head>
+<body>
+    <div class="container">        
+        <h2 class="text-center my-2">Tabela</h2>                
+        <hr>    
+        <!--(table>(thead>tr>th{Colunas$}*4)+(tbody>tr>td{Colunas$}*4))-->
+
+        <table class="table table-hover ">
+            <caption>Personagens</caption>
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col"class="d-sm-none">Nome Verdadeiro</th>
+                    <th scope="col">Nome Herói</th>
+                    <th scope="col">Habilidades</th>
+                </tr>
+            </thead>
+            <tbody>
+                 <tr scope="row">
+                    <td>1</td>
+                    <td class="d-sm-none">Tony Stark</td>
+                    <td>Homem de Ferro</td>
+                    <td>Inteligência e Armadura</td>
+                </tr>
+                 <tr scope="row" class="table-warning">
+                    <td>2</td>
+                    <td class="d-sm-none">Steve Rogers</td>
+                    <td>Capitão América</td>
+                    <td>Super Força</td>
+                </tr>
+                 <tr scope="row" class="bg-success">
+                    <td>3</td>
+                    <td class="d-sm-none">Bruce Banner</td>
+                    <td>Hulk</td>
+                    <td>Esmagar</td>
+                </tr>
+                 <tr scope="row" class="table-danger">
+                    <td>4</td>
+                    <td class="d-sm-none">Peter Parker</td>
+                    <td>Homem Aranha</td>
+                    <td>Amigo da Vizinhança</td>
+                </tr>
+                 <tr scope="row" class="table-info">
+                    <td>5</td>
+                    <td class="d-sm-none">Thor</td>
+                    <td>Thor</td>
+                    <td>Deus do Trovão</td>
+                </tr>
+                 <tr scope="row">
+                    <td>6</td>
+                    <td class="d-sm-none">T'Challa</td>
+                    <td>Pantera Negra</td>
+                    <td>Super Força, Armadura</td>
+                </tr>
+                 <tr scope="row" class="bg-success">
+                    <td>7</td>
+                    <td class="d-sm-none">Doutor Estranho</td>
+                    <td>Doutor Estranho</td>
+                    <td>O Mago! rs</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        
+    </div>
+    
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+</body>
+</html>

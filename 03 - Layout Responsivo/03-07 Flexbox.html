@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    
+    <title>Hello, world!</title>
+    <style>
+        div{
+            border: 1px solid green;
+        }
+        section{
+            background: #f1f1f1;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text-center display-4 my-2">Box Flexíveis</h1>
+    <hr>
+    
+    <aside class="container">
+        
+        <!--section class="d-flex flex-row justify-content-start"-->
+        <!--section class="d-flex flex-row justify-content-center"-->
+        <!--section class="d-flex flex-row justify-content-end"-->
+        <!--section class="d-flex flex-row justify-content-stretch"-->
+        <section class="d-flex flex-row justify-content-center">
+            <div class="p-4">Justify - Um</div>
+            <div class="p-4 h2">Justify - Dois</div>
+            <div class="p-4 h4">Justify - Três</div>
+        </section>
+        <hr>
+        <!--section class="d-flex flex-row align-items-start"-->
+        <!--section class="d-flex flex-row align-items-center"-->
+        <!--section class="d-flex flex-row align-items-end"-->
+        <!--section class="d-flex flex-row align-items-stretch"-->
+        <section class="d-flex flex-row align-items-center">
+            <div class="p-4">align items - Um</div>
+            <div class="p-4 h2">align items - Dois</div>
+            <div class="p-4 h4">align items - Três</div>
+        </section>
+        <hr>        
+        <section class="d-flex flex-row-reverse align-items-end">
+            <div class="p-4">- Reverse - Um</div>
+            <div class="p-4 h2">- Reverse - Dois</div>
+            <div class="p-4 h4">- Reverse - Três</div>
+        </section>
+        <hr>
+        <section class="d-flex flex-row">
+            <div class="p-4 align-self-md-start">align self - md - Um</div>
+            <div class="p-4 align-self-md-center">align self - md - Dois</div>
+            <div class="p-4 align-self-md-end">align self - md - Três</div>
+            <div class="p-4 align-self-md-baseline h3">align self - md - Três</div>
+            <div class="p-4 align-self-md-stretch">align self - md - Três</div>
+        </section>
+        <aside class="container my-3">            
+            <dl class="row">
+                <dt class="col-xs-6">O link:</dt>
+                <dd class="col-xs-6 px-3">                
+                    <a href="https://getbootstrap.com/docs/4.1/utilities/flex/">FLEX</a>
+                    <br>
+                    São muitas definições, muito além do que apresentei no vídeo, então ai está a documentação.
+                </dd>
+            </dl>
+        </aside>        
+    </aside>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+</body>
+</html>

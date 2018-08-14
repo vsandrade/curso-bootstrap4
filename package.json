@@ -1,0 +1,23 @@
+{
+  "name": "projeto01",
+  "version": "1.0.0",
+  "description": "Apenas para começar a iniciação com bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bootstrap",
+    "css",
+    "html",
+    "meu_projeto"
+  ],
+  "author": "vinicius",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.2.0",
+    "bootstrap": "^4.1.2",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.4"
+  }
+}
