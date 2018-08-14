@@ -18,9 +18,7 @@ If you want to see this link course, really in action [original site](http://ude
 2. Fork the [Bootstrap 4 - Course](https://github.com/vsandrade/curso-bootstrap4/fork)
 3. Clone the repo you just forked.
 
-## Site and User Settings
-
-You have to fill some informations on `_config.yml` to customize your site.
+## User Settings
 
 ```
 # Site settings
