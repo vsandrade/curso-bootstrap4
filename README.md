@@ -1,4 +1,4 @@
-# Bootstrap 4 - [Course](http://udemy.com/)
+# Bootstrap 4 - [Course](http://udemy.com/bootstrap-4-ozirispc/)
 
 This is all of the files for our Course about Bootstrap 4.
 
@@ -13,7 +13,7 @@ If you want to see this link course, really in action [original site](http://ude
 ## Basic Setup
 
 1. [Install Node.js](http://https://nodejs.org/)
-2. Fork the [Bootstrap 4 - Course](https://github.com/vsandrade/Bootstrap4_Course/fork)
+2. Fork the [Bootstrap 4 - Course](https://github.com/vsandrade/curso-bootstrap4/fork)
 3. Clone the repo you just forked.
 4. Edit `_config.yml` to personalize your site.
 5. Check out the sample posts in `_posts` to see examples for assigning categories and tags, and other YAML data.
