@@ -6,19 +6,17 @@ The Summary is:
 
 - 03 - Layout Responsivo
 - 04 - Navegação
-- 05 - Componentes Tipográficos
+- 05 - Tipográficos
+- 06 - Botões
+- 07 - Imagens, Tabelas e Cards
 
-If you want to see this link course, really in action [original site](http://udemy.com.br/).
+If you want to see this link course, really in action [original site](http://udemy.com/bootstrap-4-ozirispc/).
 
 ## Basic Setup
 
 1. [Install Node.js](http://https://nodejs.org/)
 2. Fork the [Bootstrap 4 - Course](https://github.com/vsandrade/curso-bootstrap4/fork)
 3. Clone the repo you just forked.
-4. Edit `_config.yml` to personalize your site.
-5. Check out the sample posts in `_posts` to see examples for assigning categories and tags, and other YAML data.
-6. Read the documentation below for further customization pointers and documentation.
-7. **Remember to compile your assets files with Gulp.**
 
 ## Site and User Settings
 
