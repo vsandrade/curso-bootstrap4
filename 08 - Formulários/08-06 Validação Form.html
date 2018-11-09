@@ -10,38 +10,20 @@
 </head>
 <body>
     <div class="container">        
-        <h2 class="display-4 text-muted">Ajustando HTML FORM</h2>                
+        <h2 class="display-4 text-muted">Validação de Formulário</h2>                
         <hr>
         <form action="">
             <div class="form-group">
                 <label for="nome">Nome</label>                
-                <input class="form-control" type="text" id="nome" placeholder="entre com o nome"> 
-            </div>
-            <div class="form-group">
-                <label for="email">E-mail</label>                
-                <input class="form-control" type="email" id="email" placeholder="entre com o email"> 
-                <small class="form-text text-muted">Seu e-mail não será compartilhado</small>
+                <input class="form-control is-valid" type="text" id="nome" placeholder="entre com o nome"> 
             </div>
             <div class="form-group">
                 <label for="password">Senha</label>                
-                <input class="form-control" type="password" id="password" placeholder="entre com a senha"> 
-            </div>
-            <div class="form-group">
-                <label for="especie">Espécie</label>
-                <select class="form-control" id="especie">
-                    <option value="">Humano</option>
-                    <option value="">Não Humano</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="mensagem">Mensagem Tony</label>
-                <textarea class="form-control" id="mensagem" rows="3"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="file">Enviar Arquivo</label>                
-                <input class="form-control btn btn-warning" type="file" id="file">
-                <small class="form-text text-muted">Tamanho máximo de 3Mb</small>
-            </div>             
+                <input class="form-control is-invalid" type="password" id="password" placeholder="entre com a senha"> 
+                <div class="invalid-feedback">
+                    A sua senha está errada
+                </div>
+            </div>                        
             
             <button type="submit" class="btn btn-success">Enviar</button>
         </form>
