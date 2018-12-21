@@ -10,23 +10,41 @@
 </head>
 <body>
     <div class="container">        
-        <h2 class="display-4 text-muted">Validação de Formulário</h2>                
+        <h2 class="display-4 text-muted">Grupos de Inputs</h2>                
         <hr>
-        <form action="">
-            <div class="form-group">
-                <label for="nome">Nome</label>                
-                <input class="form-control is-valid" type="text" id="nome" placeholder="entre com o nome"> 
-            </div>
-            <div class="form-group">
-                <label for="password">Senha</label>                
-                <input class="form-control is-invalid" type="password" id="password" placeholder="entre com a senha"> 
-                <div class="invalid-feedback">
-                    A sua senha está errada
-                </div>
-            </div>                        
-            
-            <button type="submit" class="btn btn-success">Enviar</button>
-        </form>
+        <!-- .input-group>(.input-group>button.btn.btn-success{GO!})input.form-control-->
+        <div class="input-group input-group-sm mb-3">
+            <div class="input-group-prepend"><button class="btn btn-success">GO!</button></div>
+            <input type="text" class="form-control" placeholder="Digite aqui">
+        </div>
+        
+        <div class="input-group mb-3">
+            <div class="input-group-prepend"><button class="btn btn-success">GO!</button></div>
+            <input type="text" class="form-control" placeholder="Digite aqui">
+        </div>
+        
+        <div class="input-group input-group-lg mb-3">
+            <div class="input-group-prepend"><button class="btn btn-success">GO!</button></div>
+            <input type="text" class="form-control" placeholder="Digite aqui">
+        </div>
+        
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Digite aqui">
+            <div class="input-group-append"><button class="btn btn-success">GO!</button></div>
+        </div>
+        
+        <div class="input-group mb-3">
+            <div class="input-group-prepend"><button class="btn btn-success">NOW!</button></div>
+            <input type="text" class="form-control" placeholder="Digite aqui">
+            <div class="input-group-append"><button class="btn btn-success">GO!</button></div>
+        </div>
+        
+        <div class="input-group mb-3">
+            <div class="input-group-prepend"><span class="input-group-text">NOW!</span></div>
+            <input type="text" class="form-control" placeholder="Digite aqui">
+            <div class="input-group-append"><span class="input-group-text">GO!</span></div>
+        </div>
+        
     </div>
     
     <!-- Optional JavaScript -->
