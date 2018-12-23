@@ -82,7 +82,7 @@ If you want to see this link course, really in action [original site](http://ude
 ```
 # Site settings
 title: Vinícius de Andrade - Professor and Full-stack Developer
-description: A Course about [Bootstrap 4](http://udemy.com/bootstrap-4-ozirispc/)
+description: A Course about [Bootstrap 4]
 baseurl: "" # the subpath of your site, e.g. /blog/ or empty.
 
 # User settings
