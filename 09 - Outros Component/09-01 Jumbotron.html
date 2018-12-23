@@ -8,14 +8,45 @@
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">    
     <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <title>Hello, world!</title>    
+    <style>
+        .jumbotron{
+            background-image: url(imagens/ironman-cover.jpg);            
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center top;
+            color: white;            
+        }
+        .hr{
+            border-top: 1px solid rgba(255, 255, 255, 0.632);
+            padding-top: 10px;
+        }
+    </style>
 </head>
 <body>
+    <div class="jumbotron">
+        <h1 class="display-4">Avengers 4</h1>
+        <p class="lead text-secondary">Estamos todos muito ansiosos para ver o próximo filme</p>
+    </div>
     <div class="container">        
-        <h2 class="display-4 text-muted">Jumbotron</h2>                
+        <h2 class="display-4">Jumbotron</h2>                
         <hr>
+        <div class="jumbotron mb-3">
+            <h1 class="display-4 font-weight-bold">Avengers 4</h1>
+            <p class="lead text-secondary">Estamos todos muito ansiosos para ver o próximo filme</p>
+        </div>
         
+        <div class="jumbotron jumbotron-fluid mb-3">
+            <h1 class="display-4 font-weight-bold">Avengers 4</h1>
+            <p class="lead text-secondary">Estamos todos muito ansiosos para ver o próximo filme</p>
+        </div>
         
-        
+        <div class="jumbotron jumbotron-fluid p-3">
+            <h1 class="display-4 font-weight-bold">Avengers 4</h1>
+            <p class="lead text-secondary">Estamos todos muito ansiosos para ver o próximo filme</p>            
+            <p class="lead text-secondary hr">Estamos todos muito ansiosos para ver o próximo filme</p>
+            <button class="btn btn-outline-success">Clique aqui</button>
+        </div>
+                       
     </div>
     
     <!-- Optional JavaScript -->

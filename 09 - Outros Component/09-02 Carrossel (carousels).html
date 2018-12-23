@@ -7,15 +7,93 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">    
     <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <title>Hello, world!</title>    
+    <title>Hello, world!</title> 
+    <style>
+        .carousel-indicators .active{
+            background-color: silver;
+        }
+        .carousel-caption{          
+            font-size: 2em;  
+            color: #FFFFFF;
+            text-shadow: 2px 2px 5px #000;
+            color: #FFFFFF;
+        }
+    </style>   
 </head>
 <body>
     <div class="container">        
         <h2 class="display-4 text-muted">Carrossels</h2>                
         <hr>
-        
-        
-        
+        <div id="carouselExampleControl" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleControl" data-slide-to="0"></li>
+                <li data-target="#carouselExampleControl" data-slide-to="1"></li>
+                <li data-target="#carouselExampleControl" data-slide-to="2"></li>
+                <li data-target="#carouselExampleControl" data-slide-to="3"></li>
+                <li data-target="#carouselExampleControl" data-slide-to="4"></li>
+                <li data-target="#carouselExampleControl" data-slide-to="5"></li>
+                <li data-target="#carouselExampleControl" data-slide-to="6"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active"> 
+                    <img src="imagens/imagem1.jpg" alt="" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Homem-Aranha</h5>
+                        <p class="display-5">Apenas um texto para ver como vai ficar</p>
+                    </div>
+                </div>
+                <div class="carousel-item"> 
+                    <img src="imagens/imagem2.jpg" alt="" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Doutor Estranho</h3>
+                        <p class="display-5">Apenas um texto para ver como vai ficar</p>
+                    </div>
+                </div>                
+                <div class="carousel-item">
+                    <img src="imagens/imagem3.jpg" alt="" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Homem de Ferro</h3>
+                        <p class="display-5">Apenas um texto para ver como vai ficar</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="imagens/imagem4.jpg" alt="" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Homem-Formiga</h3>
+                        <p class="display-5">Apenas um texto para ver como vai ficar</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="imagens/imagem5.jpg" alt="" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Capitão América</h3>
+                        <p class="display-5">Apenas um texto para ver como vai ficar</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="imagens/imagem6.jpg" alt="" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Senhor das Entrelas</h3>
+                        <p class="display-5">Apenas um texto para ver como vai ficar</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                        <img src="imagens/imagem7.jpg" alt="" class="d-block w-100">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Viúva Negra</h3>
+                            <p class="display-5">Apenas um texto para ver como vai ficar</p>
+                        </div>
+                    </div>
+            </div>      
+            <a class="carousel-control-prev" href="#carouselExampleControl" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControl" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>      
     </div>
     
     <!-- Optional JavaScript -->
