@@ -4,70 +4,70 @@ This is all of the files for our Course about Bootstrap 4.
 
 The Summary is:
 
-### • 03 - Layout Responsivo
-  - 03-01 Backgrounds
-  - 03-02 Containers e Rows
-  - 03-03 Media Breakpoints
-  - 03-04 Sistema de Grid
-  - 03-05 Alinhamento e offset
-  - 03-06 Padding, Margin e Display
-  - 03-07 Flexbox
+### • 04 - Layout Responsivo
+  - 04-01 Backgrounds
+  - 04-02 Containers e Rows
+  - 04-03 Media Breakpoints
+  - 04-04 Sistema de Grid
+  - 04-05 Alinhamento e offset
+  - 04-06 Padding, Margin e Display
+  - 04-07 Flexbox
   
-### • 04 - Navegação
-  - 04-01 NavBar
-  - 04-02 Hand Code
-  - 04-03 Dropdown
-  - 04-04 Pill
-  - 04-05 Campo de Busca
-  - 04-06 Breadcrumb
-  - 04-07 Paginação
-  - 04-08 Scroll Animado
+### • 05 - Navegação
+  - 05-01 NavBar
+  - 05-02 Hand Code
+  - 05-03 Dropdown
+  - 05-04 Pill
+  - 05-05 Campo de Busca
+  - 05-06 Breadcrumb
+  - 05-07 Paginação
+  - 05-08 Scroll Animado
   
-### • 05 - Tipográficos
-  - 05-01 Headlines
-  - 05-02 Cores de Texto
-  - 05-03 Parag e Blocos
-  - 05-04 Inline Tags
-  - 05-05 Listas
-  - 05-06 Lista de Comportamentos JS
-  - 05-07 Floats Responsivos
-  - 05-08 Fixos e Justificados
+### • 06 - Tipográficos
+  - 06-01 Headlines
+  - 06-02 Cores de Texto
+  - 06-03 Parag e Blocos
+  - 06-04 Inline Tags
+  - 06-05 Listas
+  - 06-06 Lista de Comportamentos JS
+  - 06-07 Floats Responsivos
+  - 06-08 Fixos e Justificados
   
-### • 06 - Botões
-  - 06-01 Cores
-  - 06-02 Delineados - Outline
-  - 06-03 Agrupados
-  - 06-04 Radio e Check
-  - 06-05 Botões Toolbar
-  - 06-06 Alerts e Badges
+### • 07 - Botões
+  - 07-01 Cores
+  - 07-02 Delineados - Outline
+  - 07-03 Agrupados
+  - 07-04 Radio e Check
+  - 07-05 Botões Toolbar
+  - 07-06 Alerts e Badges
   
-### • 07 - Imagens, Tabelas e Cards
-  - 07-01 Imagens
-  - 07-02 Figure e Picture
-  - 07-03 Font-awesome
-  - 07-04 Cards
-  - 07-05 Cards - Cor Sombra
-  - 07-06 Deck, Coluna e Grupo
-  - 07-07 Table
-  - 07-08 Border
-  - 07-09 Media Object  
+### • 08 - Imagens, Tabelas e Cards
+  - 08-01 Imagens
+  - 08-02 Figure e Picture
+  - 08-03 Font-awesome
+  - 08-04 Cards
+  - 08-05 Cards - Cor Sombra
+  - 08-06 Deck, Coluna e Grupo
+  - 08-07 Table
+  - 08-08 Border
+  - 08-09 Media Object  
   
-### • 08 - Formulários
-  - 08-01 Ajustando html e Form
-  - 08-02 Form Estilizado
-  - 08-03 Check e Radio Free
-  - 08-03 Check e Radio
-  - 08-04 Form Inline
-  - 08-05 Form Multi-Colunas
-  - 08-06 Validação Form
-  - 08-07 Grupo de Input
-  - 08-07 Grupo check_radio_select
+### • 09 - Formulários
+  - 09-01 Ajustando html e Form
+  - 09-02 Form Estilizado
+  - 09-03 Check e Radio Free
+  - 09-03 Check e Radio
+  - 09-04 Form Inline
+  - 09-05 Form Multi-Colunas
+  - 09-06 Validação Form
+  - 09-07 Grupo de Input
+  - 09-07 Grupo check_radio_select
   
-### • 09 - Outros Componentes
-  - 09-01 Jumbotron
-  - 09-02 Carrossel
-  - 09-03 Collapse
-  - 09-04 Accordian
+### • 10 - Outros Componentes
+  - 10-01 Jumbotron
+  - 10-02 Carrossel
+  - 10-03 Collapse
+  - 10-04 Accordian
 
 If you want to see this link course, really in action [original site](http://udemy.com/bootstrap-4-ozirispc/).
 
