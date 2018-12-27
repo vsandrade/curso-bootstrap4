@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">   
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Hello, world!</title>    
+</head>
+<body>
+    <div class="container">        
+        <h2 class="display-4 text-muted">Accordion</h2>        
+        <hr>
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <button class="btn btn-link" data-target="#collapse1" data-toggle="collapse">
+                        informação 1
+                    </button>
+                </div>
+                <div class="collapse" id="collapse1" data-parent="#accordion">
+                    <div class="card-body">
+                        <h3>Informação 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis laudantium vero vitae totam dolorum pariatur! Sed quasi voluptate rem consectetur iste! Iste minus voluptatibus perspiciatis repellendus iusto laboriosam placeat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <button class="btn btn-link" data-target="#collapse2" data-toggle="collapse">
+                        informação 2
+                    </button>
+                </div>
+                <div class="collapse" id="collapse2" data-parent="#accordion">
+                    <div class="card-body">
+                        <h3>Informação 2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis laudantium vero vitae totam dolorum pariatur! Sed quasi voluptate rem consectetur iste! Iste minus voluptatibus perspiciatis repellendus iusto laboriosam placeat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- #accordion1>(btn.btn.btn-link[data-toggle=collapse data-target=#collapse$@3]*3)+.card -->
+        <div id="accordion1">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse3">
+                informação 3
+            </button>
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse4">
+                informação 4
+            </button>
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse5">
+                informação 5
+            </button>
+            <div class="card">
+                <div id="collapse3" class="collapse show" data-parent="#accordion1">
+                    <div class="card-body">
+                        <h3>informação 3</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit porro odio, cum exercitationem ad tenetur. Eligendi ipsam illo accusantium quisquam obcaecati id maxime aliquam velit ex dignissimos voluptatibus, exercitationem voluptate.</p>
+                    </div>
+                </div>
+                <div id="collapse4" class="collapse" data-parent="#accordion1">
+                    <div class="card-body">
+                        <h3>informação 4</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit porro odio, cum exercitationem ad tenetur. Eligendi ipsam illo accusantium quisquam obcaecati id maxime aliquam velit ex dignissimos voluptatibus, exercitationem voluptate.</p>
+                    </div>
+                </div>
+                <div id="collapse5" class="collapse" data-parent="#accordion1">
+                    <div class="card-body">
+                        <h3>informação 5</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit porro odio, cum exercitationem ad tenetur. Eligendi ipsam illo accusantium quisquam obcaecati id maxime aliquam velit ex dignissimos voluptatibus, exercitationem voluptate.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+        
+    </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+</body>
+</html>
