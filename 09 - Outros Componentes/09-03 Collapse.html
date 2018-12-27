@@ -6,20 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">   
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">    
-    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <title>Hello, world!</title>    
 </head>
 <body>
     <div class="container">        
         <h2 class="display-4 text-muted">Collapse</h2>                
         <hr>
-                 
+        <button data-target="#collapseInfo" data-toggle="collapse" class="btn btn-info my-2">Homem de Ferro</button>
+        <a href="#collapseInfo" data-toggle="collapse" class="btn btn-info my-2">Homem de ferro</a>
+        <div class="collapse show" id="collapseInfo">
+            <div class="card card-body">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <h3 class="border-dark border-bottom">Tony Stark</h3>
+                        <blockquote class="blockquote text-right">
+                            "Você claramente não sabe nada sobre mim, então aqui está uma pequena biografia para você. Eu costumava fazer armas para ganhar a vida. Eu vendi coisas que mataram pessoas. Tudo o que eu faço é pensar nas vidas que destruí. A única coisa que costumava me dar uma pausa era o álcool. Mas isso só piorou tudo. Mas você sabe o que eu aprendi de tudo o que bebi? Que é muito fácil culpar todo o mundo pelo o que deu errado na sua vida. Isso era o que eu costumava fazer, até o dia em que finalmente acordei e percebi... Amigo, você causou isso a você mesmo."
+                            <footer class="blockquote-footer pt-3">
+                                TONY STARK - <cite title="completou Steve McFeely.">completou Steve McFeely.</cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div class="col-lg-2 pt-5 d-none d-sm-block">
+                        <img src="imagens/Tony_Stark.jpg" width="150" alt="tony stark">
+                    </div>                    
+                </div>
+            </div>
+        </div>         
     </div>
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js" ></script>
 </body>
 </html>
