@@ -16,7 +16,29 @@
     <div class="container">        
         <h2 class="display-4">Popovers</h2>                
         <hr>
-        
+        <button class="btn btn-warning" data-toggle="popover"
+        data-placement="top" title="Titulo Aqui" 
+        data-content="Aqui colocamos o conteúdo">
+            Clique para entender
+        </button>
+        <hr>
+        <button class="btn btn-warning" data-toggle="popover"
+        data-placement="left" title="Titulo Aqui" 
+        data-content="Aqui colocamos o conteúdo">
+            Clique para entender
+        </button>
+        <hr>
+        <button class="btn btn-warning" data-toggle="popover"
+        data-placement="bottom" title="Titulo Aqui" 
+        data-content="Aqui colocamos o conteúdo">
+            Clique para entender
+        </button>
+        <hr>
+        <button class="btn btn-warning" data-toggle="popover"
+        data-placement="right" title="Titulo Aqui" 
+        data-content="Aqui colocamos o conteúdo">
+            Clique para entender
+        </button>
                        
     </div>
     
@@ -25,5 +47,10 @@
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
 </body>
 </html>
