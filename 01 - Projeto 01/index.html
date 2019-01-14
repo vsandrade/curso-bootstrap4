@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="topo">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a href="#topo" class="navbar-brand">Cervejaria</a>
+                
+                <button class="navbar-toggler navbar-toggler-right" 
+                data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" 
+                aria-expanded="false" aria-label="Toggle Navigation">menu</button>
+                
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="#" class="nav-link">Nossas Cervejas</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">História</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div>
+            <canvas id="beerCanvas"></canvas>
+            <div class="coming_content">
+                <div class="logo">
+                    <img src="img/zeebeer_preta.png" alt="logo cervejaria zeebeer" style="width: 268px">
+                </div>
+                <div class="separator_container">
+                    <div class="separator line_separator">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="420.864" height="420.864" viewBox="0 0 320.864 320.864">
+                                <path fill="#000" d="M184.04 81.83c-1.89-5.1-3.46-28.63-3.926-55.05-.003-.1.107-.37.514-.37 2.092-.125 3.248-1.79 3.248-3.91V4c0-2.2-1.8-4-4-4H140.99c-2.2 0-4 1.8-4 4v18.5c0 2.123 1.06 3.77 3.152 3.89.673 0 .613.478.61.673-.463 26.677-2.035 49.67-3.925 54.77-11.12 29.993-35.884 27.39-35.884 63.393V273.96c0 49.536 24.92 47.044 59.49 46.82 34.57.224 59.49 2.716 59.49-46.82V145.226c0-36.002-24.764-33.4-35.883-63.394zm12.89 127.953c-5.845 8.89-31.005 30.02-36.458 30.02-5.338 0-30.727-21.21-36.532-30.02-2.907-4.41-4.97-9.277-4.627-15.678.605-11.325 9.866-20.678 21.208-20.678 11.66 0 18.45 12.44 19.915 12.44 1.675 0 8.755-12.44 19.914-12.44 11.34 0 20.6 9.353 21.206 20.678.342 6.4-1.713 11.247-4.627 15.678z"/>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+                <h3>Eu gosto de Cerveja, Mas a Zee Beer é ainda melhor!</h3>
+            </div>
+        </div>
+        
+    </header>
+    <section><!-- Nossas Cervejas -->        
+        <header>
+            <h2>Nossas Cervejas</h2>
+        </header>
+    </section><!-- FIM Nossas Cervejas -->
+    <section class="bg-historia"><!-- História -->        
+        <canvas id="beerCanvas2"></canvas>
+        <div class="container my-3">
+            <br>
+            <header>            
+                <h2 class="text-center">História</h2>
+                <hr>
+            </header> 
+            
+            <div class="row">
+                <div class="col-sm-offset-1 col-sm-8 col-xs-12 text-justify">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quos sint eveniet itaque accusantium, eligendi pariatur? Voluptas architecto eveniet alias! Ex, excepturi ducimus? Omnis inventore consequuntur ab distinctio odio debitis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quos sint eveniet itaque accusantium, eligendi pariatur? Voluptas architecto eveniet alias! Ex, excepturi ducimus? Omnis inventore consequuntur ab distinctio odio debitis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quos sint eveniet itaque accusantium, eligendi pariatur? Voluptas architecto eveniet alias! Ex, excepturi ducimus? Omnis inventore consequuntur ab distinctio odio debitis.</p>
+                </div>
+                <div class="col-sm-4 col-xs-12 text-center">
+                    <img src="img/zeebeer_preta.png" alt="logo cervejaria zeebeer" style="width: 250px">
+                </div>
+            </div>
+            <br>
+        </div>        
+    </section><!-- Fim História -->
+    <section><!-- Contatos -->
+        <header>
+            <h2>Contatos</h2>
+        </header>        
+    </section><!-- FIM Contatos -->
+    <footer class="border-top border-warning bg-light py-5 text-dark text-center">
+        <!-- .container>(div>img[src=img/zeebeer_preta.png][width=100])+.btn-group.text-white.my-3.shadow-sm -->
+        <div class="container">
+            <div>
+                <img src="img/zeebeer_preta.png" alt="" width="100">
+            </div>
+            <div class="btn-group text-white my-3 shadow-sm">
+                <a href="http://facebook.com" target="_blank" class="text-dark btn btn-outline-warning">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="http://twitter.com" target="_blank" class="text-dark btn btn-outline-warning">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="http://instagram.com" target="_blank" class="text-dark btn btn-outline-warning">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <small>
+                <p>&copy;2019 - @ZeeBeerBR</p> 
+            </small>
+            <p>&ldquo; Zee Beer Cervejaria &rdquo; &mdash; De <em>BH, MG</em> para <em>Valença, BA</em></p>
+        </div>
+    </footer>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

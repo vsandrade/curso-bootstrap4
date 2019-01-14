@@ -1,0 +1,24 @@
+{
+  "name": "projeto_cervejaria",
+  "version": "1.0.0",
+  "description": "Este é um projeto para o cliente dono da Cervejaria",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cerveja",
+    "cervejaria",
+    "beer"
+  ],
+  "author": "Vinicius de Andrade",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.6"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.6.3"
+  }
+}
