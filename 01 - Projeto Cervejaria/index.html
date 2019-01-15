@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>ZeeBeer</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -56,14 +57,17 @@
                 <h2 class="text-center">Nossas Cervejas</h2>
                 <hr>
             </header>
-                        
+            
             <div class="card-columns">
-                <div class="card" ng-repeat="cerveja in cervejas">
+                <div class="card profile-card" ng-repeat="cerveja in cervejas">
+                    <div class="card-img-block" ng-show="cerveja.img">
+                        <img class="card-img-top" ng-src="img/{{cerveja.img}}" alt="">
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">
                             {{cerveja.nome}}
                             <small><em>{{cerveja.tipo}}</em></small>
-                        </h5>   
+                        </h5>
                         <p class="card-text">
                             {{cerveja.descricao | cut:true:100:' ...'}}
                         </p>
@@ -72,73 +76,175 @@
                         </footer> 
                         <br>
                         <button class="btn btn-outline-warning btn-block text-dark"
-                        ng-click="detalhar(cerveja)">
+                        ng-click="detalhar(cerveja)" 
+                        data-toggle="modal" data-target="#detalhes">
                         Leia Mais
-                        </button>                    
-                    </div> 
-                </div>
+                    </button>                    
+                </div> 
             </div>
         </div>
-        
+    </div>
+    
+    <br>
+</section><!-- FIM Nossas Cervejas -->
+<section class="bg-historia"><!-- História -->        
+    <canvas id="beerCanvas2"></canvas>
+    <div class="container my-3">
         <br>
-    </section><!-- FIM Nossas Cervejas -->
-    <section class="bg-historia"><!-- História -->        
-        <canvas id="beerCanvas2"></canvas>
-        <div class="container my-3">
-            <br>
-            <header>            
-                <h2 class="text-center">História</h2>
-                <hr>
-            </header> 
-            
-            <div class="row">
-                <div class="col-sm-offset-1 col-sm-8 col-xs-12 text-justify">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quos sint eveniet itaque accusantium, eligendi pariatur? Voluptas architecto eveniet alias! Ex, excepturi ducimus? Omnis inventore consequuntur ab distinctio odio debitis.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quos sint eveniet itaque accusantium, eligendi pariatur? Voluptas architecto eveniet alias! Ex, excepturi ducimus? Omnis inventore consequuntur ab distinctio odio debitis.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quos sint eveniet itaque accusantium, eligendi pariatur? Voluptas architecto eveniet alias! Ex, excepturi ducimus? Omnis inventore consequuntur ab distinctio odio debitis.</p>
-                </div>
-                <div class="col-sm-4 col-xs-12 text-center">
-                    <img src="img/zeebeer_preta.png" alt="logo cervejaria zeebeer" style="width: 250px">
-                </div>
+        <header>            
+            <h2 class="text-center">História</h2>
+            <hr>
+        </header> 
+        
+        <div class="row">
+            <div class="col-md-offset-1 col-sm-8 col-xs-12 text-justify">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quos sint eveniet itaque accusantium, eligendi pariatur? Voluptas architecto eveniet alias! Ex, excepturi ducimus? Omnis inventore consequuntur ab distinctio odio debitis.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quos sint eveniet itaque accusantium, eligendi pariatur? Voluptas architecto eveniet alias! Ex, excepturi ducimus? Omnis inventore consequuntur ab distinctio odio debitis.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quos sint eveniet itaque accusantium, eligendi pariatur? Voluptas architecto eveniet alias! Ex, excepturi ducimus? Omnis inventore consequuntur ab distinctio odio debitis.</p>
             </div>
-            <br>
-        </div>        
-    </section><!-- Fim História -->
-    <section><!-- Contatos -->
+            <div class="col-md-4 col-xs-12 text-center">
+                <img src="img/zeebeer_preta.png" alt="logo cervejaria zeebeer" style="width: 250px">
+            </div>
+        </div>
+        <br>
+    </div>        
+</section><!-- Fim História -->
+<section><!-- Contatos -->
+    <br>
+    <div class="container">
         <header>
             <h2>Contatos</h2>
-        </header>        
-    </section><!-- FIM Contatos -->
-    <footer class="border-top border-warning bg-light py-5 text-dark text-center">
-        <!-- .container>(div>img[src=img/zeebeer_preta.png][width=100])+.btn-group.text-white.my-3.shadow-sm -->
-        <div class="container">
-            <div>
-                <img src="img/zeebeer_preta.png" alt="" width="100">
+            <hr>
+        </header>
+        
+        <!-- .row>(.col-sm-8>form>.form-group.float-label-control*4>label{nome}+input)+.col-sm-4 -->
+        <div class="row">
+            <div class="col-sm-8">
+                <form>
+                    <div class="form-group float-label-control">
+                        <label for="">Nome</label>
+                        <input class="form-control" type="text" placeholder="Nome">
+                    </div>
+                    <div class="form-group float-label-control">
+                        <label for="">e-mail</label>
+                        <input class="form-control" type="text" placeholder="e-mail">
+                    </div>
+                    <div class="form-group float-label-control">
+                        <label for="">Telefone</label>
+                        <input class="form-control" type="text" placeholder="Telefone">
+                    </div>
+                    <div class="form-group float-label-control">
+                        <label for="">Minha Mensagem</label>
+                        <textarea class="form-control" type="text" placeholder="Minha Mensagem"></textarea>
+                    </div>
+                    <div class="clearfix">
+                        <button class="btn btn-outline-warning float-right text-dark">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar
+                        </button>
+                    </div>
+                </form>
             </div>
-            <div class="btn-group text-white my-3 shadow-sm">
-                <a href="http://facebook.com" target="_blank" class="text-dark btn btn-outline-warning">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="http://twitter.com" target="_blank" class="text-dark btn btn-outline-warning">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="http://instagram.com" target="_blank" class="text-dark btn btn-outline-warning">
-                    <i class="fab fa-instagram"></i>
-                </a>
+            <div class="col-sm-4">
+                <br>
+                <h4>Contato de Serviço e Compra</h4> <br>
+                Telefone: +55 031 11111-0000 <br>
+                <b>E-mail: </b> <a href="mailto:zee@zee.com.br">zee@zee.com.br</a>
+                <br>
+                <br>
+                <b>Endereço</b> <br>
+                Rua Maestro, Nº 1234 <br>
+                Valença - BAHIA - BRASIL <br>
+                CEP: +55 031 11111-0000 <br>
             </div>
-            <small>
-                <p>&copy;2019 - @ZeeBeerBR</p> 
-            </small>
-            <p>&ldquo; Zee Beer Cervejaria &rdquo; &mdash; De <em>BH, MG</em> para <em>Valença, BA</em></p>
         </div>
-    </footer>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
-    <script src="js/bd.js"></script>
-    <script src="js/angular-sanitize.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/appzeebeer.js"></script>
+    </div>
+    
+    <br>
+</section><!-- FIM Contatos -->
+<footer class="border-top border-warning bg-light py-5 text-dark text-center">
+    <!-- .container>(div>img[src=img/zeebeer_preta.png][width=100])+.btn-group.text-white.my-3.shadow-sm -->
+    <div class="container">
+        <div>
+            <img src="img/zeebeer_preta.png" alt="" width="100">
+        </div>
+        <div class="btn-group text-white my-3 shadow-sm">
+            <a href="http://facebook.com" target="_blank" class="text-dark btn btn-outline-warning">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="http://twitter.com" target="_blank" class="text-dark btn btn-outline-warning">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="http://instagram.com" target="_blank" class="text-dark btn btn-outline-warning">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        <small>
+            <p>&copy;2019 - @ZeeBeerBR</p> 
+        </small>
+        <p>&ldquo; Zee Beer Cervejaria &rdquo; &mdash; De <em>BH, MG</em> para <em>Valença, BA</em></p>
+    </div>
+</footer>
+
+
+
+<div class="modal fade" id="detalhes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">
+                    {{cervejaDetalhe.nome}} - 
+                    <small><cite title="Source Title">{{cervejaDetalhe.composicao}}</cite></small>
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div ng-show="cervejaDetalhe.img">
+                    <img class="card-img-top" ng-src="img/{{cervejaDetalhe.img}}" width="200px">
+                    <hr>
+                </div>
+                <dl class="row">
+                    <dt class="col-sm-3">
+                        <h5>Tipo:</h5>
+                    </dt>
+                    <dd class="col-sm-9">
+                        <p>{{cervejaDetalhe.tipo}}</p>
+                    </dd>
+                    <dt class="col-sm-3">
+                        <h5>Ingredientes:</h5>
+                    </dt>
+                    <dd class="col-sm-9">
+                        <p>{{cervejaDetalhe.ingredientes}}</p>
+                    </dd>
+                    <dt class="col-sm-3">
+                        <h5>Descrição:</h5>
+                    </dt>
+                    <dd class="col-sm-9">
+                        <blockquote>
+                            <p class="text-justify" ng-bind-html="cervejaDetalhe.descricao"></p>
+                        </blockquote>
+                    </dd>
+                </dl>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-warning text-dark btn-block"><i class="fas fa-beer"></i> Quero beber</button>          
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+<script src="js/bd.js"></script>
+<script src="js/angular-sanitize.js"></script>
+<script src="js/script.js"></script>
+<script src="js/appzeebeer.js"></script>
+<script src="js/contato.js"></script>
 </body>
 </html>
